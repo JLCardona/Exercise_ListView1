@@ -42,10 +42,10 @@ public class Adaptador extends BaseAdapter {
         Entidad item = (Entidad) getItem(i);
 
         view = LayoutInflater.from(contexto).inflate(R.layout.item, null);
-        ImageView imagen = (ImageView) view.findViewById(R.id.img);
+        CheckBox imagen = (CheckBox) view.findViewById(R.id.img);
         TextView texto = (TextView) view.findViewById(R.id.text);
 
-        imagen.setImageResource(item.getImagen());
+        //imagen.setImageResource(item.getImagen());
         texto.setText(item.getTexto());
 
         return view;
